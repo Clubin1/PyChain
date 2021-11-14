@@ -1,13 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@402&family=Poppins&family=Source+Code+Pro:ital,wght@0,300;0,400;1,300&display=swap');
+
+
 .App {
   text-align: center;
 }
 
+body{
+  background: linear-gradient(230.35deg,#2d00d0 -87.7%,#0d0d0d 86.14%),#000!important;
+  font-family: 'Poppins', sans-serif;
+  color:#beabde!important;
+}
+.sendImage{
+  position: absolute;
+  top: 13rem;
+  right: 13rem;
+  height: 20rem;
+  z-index: -10;
+}
 .App-logo {
   height: 40vmin;
 }
 
+.color{
+  color: #beabde;
+}
+
+.button{
+  border: none!important;
+  width: 10rem;
+  margin-left: 6rem;
+  transition: 200ms ease all!important;
+  background: linear-gradient(93deg, rgb(37, 42, 213) 0%, rgb(122, 49, 222) 52%, rgb(196, 56, 231) 100%);
+}
+
+.input{
+  border: 2px solid rgb(157, 53, 255)!important;
+  background: rgba(15, 24, 109, 0.479)!important;
+  color:rgb(205, 41, 255)!important;
+}
+.button:hover{
+  opacity: .8;
+}
+
+.abImage{
+  position: absolute;
+  right: 3rem;
+  top: 1rem;
+  height: 5rem;
+}
+.abtImage{
+  position: absolute;
+  left: 3rem;
+  top: 4rem;
+  height: 10rem;
+}
+.line{
+  color:rgb(255, 255, 255);
+}
 .App-header {
-  background-color: #282c34;
+  background-color: #191b20;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

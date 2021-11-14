@@ -35,10 +35,10 @@ class Transactions extends Component {
   { this.state.transactions.slice(0).reverse().map(transaction =>
     transaction.transactions.map( t =>
     <tr key={t}>
-      <td><b style={{color: '#007bff'}}>0x{t.sender}</b></td>
-      <td><b style={{color: '#007bff'}}>0x{t.receiver}</b></td>
-      <td><b style={{color: '#007bff'}}>{parseFloat(t.amount).toFixed(5)} </b></td>
-      <td><b style={{color: '#007bff'}}>{t.time}</b></td>
+      <td><b className="line">0x{t.sender}</b></td>
+      <td><b className="line">0x{t.receiver}</b></td>
+      <td><b className="line">{parseFloat(t.amount).toFixed(5)} </b></td>
+      <td><b className="line">{t.time}</b></td>
     </tr>
   ))}
     </tbody>

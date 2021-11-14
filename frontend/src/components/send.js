@@ -47,17 +47,17 @@ class Send extends Component {
 
   render(){
     return (
-        <Container>
+        <Container style={{height:"60vh"}}>
   <br/>
   <h3><b>SudoCoin</b></h3>
-  <h4><b style={{color: '#007bff'}}>Send unlimited dummy crypto to anyone.</b> </h4>
+  <h4><b className="title">Send unlimited dummy crypto to anyone.</b> </h4>
         <Form onSubmit={this.handleSubmit}>
         <Form.Group as={Row}>
          <Form.Label column sm="2">
            Recipient
          </Form.Label>
          <Col sm="8">
-           <Form.Control onChange={this.handleRecipient} value={this.state.recipient} placeholder="Enter Recipient Address" />
+           <Form.Control className="input" onChange={this.handleRecipient} value={this.state.recipient} placeholder="Enter Recipient Address" />
          </Col>
        </Form.Group>
        <Form.Group as={Row}>
@@ -65,19 +65,22 @@ class Send extends Component {
           Amount
         </Form.Label>
         <Col sm="2">
-          <Form.Control onChange={this.handleAmount} placeholder="Amount" value={this.state.amount} />
+          <Form.Control  className="input"onChange={this.handleAmount} placeholder="Amount" value={this.state.amount} />
         </Col>
         <Col sm="0.5"><b> Sudo </b></Col>
       </Form.Group>
       <Form.Group as={Row}>
       <Col sm="5">
-      <Button variant="primary" type="submit">
+      <Button className="button" variant="primary" type="submit">
     Send
   </Button>
   </Col>
   </Form.Group>
      </Form>
      <br/><br/>
+     <img className="sendImage" src="https://next-landing-six.vercel.app/_next/static/images/about-cd62bc0292a7dc10fb880734a63b9584.svg"/>
+     <img className="abtImage"src="https://next-landing-six.vercel.app/_next/static/images/particle-bottom-right-a33c6aca44edb7d79cd3b83380e078b0.png"/>
+     <img className="abImage"src="https://next-landing-six.vercel.app/_next/static/images/prticle-top-right-7008d66665bf1da1d452b7f43dd0a814.png"/>
       </Container>
     );
   }
